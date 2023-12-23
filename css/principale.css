@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+
+/*GÉNÉRALITÉS DU SITE*/
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html {
+	font-size: 2vh;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #165FC7;
+	color: white;
+	overflow-x: hidden;
+	min-width: 500px;
+	font-family: 'Marvel', sans-serif;
+}
+
+section {
+	height: 300px;
+}
+
+.imgCitation{
+	display: flex;
+	flex-direction: column;
+	justify-content:baseline
+}
+cite{
+	font-size: 10px;
+	padding-top: 0;
+}
+
+h2 {
+	margin: auto;
+	font-size: 38px;
+	width: 28vw;
+	text-align: center;
+}
+
+h2:hover {
+	background-color: white;
+	width: 100vw;
+	transition: 0.3s ease;
+	color: #165FC7;
+}
+
+h1:hover {
+	background-color: #165FC7;
+	border: 6px solid #165FC7;
+	border-radius: 30px;
+	color: white;
+	transition: 0.3s ease;
+}
+/*HEADER */
+header {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 0;
+	margin-right: 0;
+	height: 100px;
+	position: sticky;
+	top: 0;
+	background-color: white;
+	color: #165FC7;
+	display: flex;
+	justify-content: center;
+}
+
+header h1 {
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	font-size: 5vh;
+}
+
+header img {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/* NAV*/
+nav {
+	width: 50%;
+	/*height: 50px;*/
+	display: inline-flex;
+	/*justify-content: end;*/
+	/*position: sticky;*/
+	top: 0;
+	flex-wrap: wrap;
+}
+
+nav ul {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+nav li {
+	/*éléments de liste du header*/
+	display: inline-flex;
+	font-size: 25px;
+}
+
+nav a:hover {
+	background-color: #165FC7;
+	border: 6px solid #165FC7;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+a:active {
+	color: white;
+}
+
+#anchor {
+	width: 0;
+	height: 0;
+}
+
+/*ACCEUIL*/
+#fond {
+	position: absolute;
+	height: 600px;
+	width: 100vw;
+	background-image: url("../images/header_f4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(10px);
+	z-index: -1;
+}
+
+#accueil {
+	/*padding-top: 25px;*/
+	color: black;
+	height: 600px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+#presentation {
+	margin: auto;
+	font-size: 25px;
+}
+
+#presentation p {
+	padding-bottom: 4vh;
+	width: 28vw;
+	text-align: center;
+	font-size: 30px;
+}
+
+/*FIN DE PRÉSENTATION*/
+
+
+/*SECTION INSCRIPTION*/
+#inscription,
+#tableau,
+#articles,
+#galerie {
+	margin-bottom: 50px;
+	margin-top: 120px;
+	padding-top: 120px;
+	height: 600px;
+}
+
+/*DIV INCLUANT LE FORM ET L'IMAGE*/
+#formulaire {
+	display: flex;
+	margin-top: 15px;
+}
+
+/*LE FORMULAIRE EN SOIT*/
+form {
+	text-align: center;
+	background-color: white;
+	color: black;
+	height: 400px;
+	width: 430px;
+	margin-right: 20px;
+	border-radius: 30px;
+}
+
+form h3 {
+	text-align: center;
+	font-size: 22px;
+	padding-top: 8px;
+}
+
+/*IMAGE DE BEN GRIMM/LA CHOSE*/
+#ben {
+	height: 500px;
+	margin-left: 0px;
+
+}
+
+/*FIN DE URGENCE*/
+
+
+
+
+/*TABLEAU / NOTRE ÉQUIPE*/
+/*DIV INCLUANT LE TABLEAU*/
+#grille {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+col:first-of-type {
+	background-color: darkblue;
+}
+
+/*LE TABLEAU EN SOIT*/
+table {
+	margin-top: 20px;
+	height: 300px;
+}
+
+table img {
+	width: 90%;
+	height: 290px;
+}
+
+caption {
+	background-color: darkblue;
+	height: 50px;
+	font-size: 25px;
+	display: table-caption;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+/*ESPACE VIDE DANS LE TABLEAU*/
+#vide {
+	height: 35px;
+}
+
+td {
+	text-align: center;
+}
+
+col:nth-child(3),
+col:nth-child(5) {
+	background-color: #518cca;
+}
+
+tfoot td {
+	background-color: darkblue;
+}
+
+table,
+caption,
+th,
+td {
+	border: 2px solid white;
+	border-collapse: collapse;
+}
+
+/*FIN DE NOTRE EQUIPE*/
+
+
+/*ARTICLES*/
+/*DIV DE LA SECTION INCLUANT LE JOURNAL ET LES ARTICLES*/
+#articles {
+	height: 700px;
+}
+
+/*DIV DU JOURNAL EN SOIT*/
+#journal {
+	display: flex;
+	margin: 35px auto;
+}
+
+/*Vise LES articles*/
+article {
+	border: 2px solid darkblue;
+	width: 30%;
+	text-align: center;
+	background-color: white;
+	color: black;
+}
+
+article img {
+	width: 150px;
+	height: 200px;
+
+}
+
+
+
+/* ARTICLE #1 SURFEUR ARGENT */
+/*image du surfeur*/
+#surfeur {
+	float: left;
+}
+
+/*image de manhattan*/
+#manhattan {
+	float: right;
+	padding: 5px;
+}
+
+article h3 {
+	padding-top: 10px;
+	margin-bottom: 8px;
+	font-size: 25px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+article p {
+
+	padding: 5px;
+	font-size: 15px;
+}
+
+#articleSurfeur {
+	display: flex;
+}
+
+.gauche {
+	margin-right: -100px;
+}
+
+.droite {
+	margin-left: -200px;
+}
+
+/* ARTICLE #2 WAKANDA ET DOOM*/
+/*image de Doom*/
+#doom {
+	float: right;
+	padding: 8px;
+}
+
+/*Image de Shuri*/
+#shuri {
+	float: left;
+	padding: 5px;
+	width: 150px;
+	height: 200px;
+}
+
+#acticleDoom {
+	display: flex;
+
+}
+
+/*FIN DE ARTICLES*/
+
+
+
+
+/*SECTION MEILLEURS MOMENTS*/
+#images {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 700px;
+
+}
+
+#images img {
+
+	margin-top: 30px;
+	height: 175px;
+	width: 100%;
+	margin: 5px;
+}
+
+#images img:hover {
+	cursor: pointer;
+
+}
+
+.image {
+	position: relative;
+	width: 33%;
+	padding-right: 10px;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.459);
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+}
+
+.image:hover .overlay {
+	cursor: pointer;
+	bottom: 0;
+	height: 100%;
+
+}
+
+.text {
+	background-color: rgba(255, 255, 255, 0.975);
+	color: #518cca;
+	font-size: 15px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/*FOOTER*/
+
+footer {
+	height: 5em;
+	background-color: white;
+	color: #165FC7;
+	display: flex;
+}
+
+footer ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+footer img {
+	width: 40px;
+	height: 40px;
+
+}
